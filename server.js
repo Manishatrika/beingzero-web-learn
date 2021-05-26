@@ -6,7 +6,9 @@ const app = express();
 app.get('/', function(req, res){
     res.send("This is from Manisha");
 })
-
+app.get('/login', function(req, res){
+    res.send("This is Login");
+})
 var port = process.env.PORT || 3000;
 
 app.listen(port, function(){
