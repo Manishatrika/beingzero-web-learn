@@ -4,7 +4,7 @@ const app = express();
 
 
 app.get('/', function(req, res){
-    res.send("This is from Manisha");
+    res.sendFile(__dirname+"/frontend/index.html");
 })
 app.get('/login', function(req, res){
     res.send("This is Login");
